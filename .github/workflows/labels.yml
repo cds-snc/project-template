@@ -1,4 +1,8 @@
-on: [issues, pull_request, workflow_dispatch]
+name: Sync repository labels
+on:
+  issues:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   sync-labels:
