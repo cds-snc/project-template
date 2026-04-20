@@ -2,10 +2,13 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: project-template
+  title: Project Template
   description: Generic project template for new CDS repositories.
-  labels:
-    license: MIT
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: cds-snc/project-template
 spec:
   type: website
-  lifecycle: experimental
-  owner: cds-snc
+  lifecycle: production 
+  owner: group:cds-snc/internal-sre
+  domain: site-reliability-engineering
